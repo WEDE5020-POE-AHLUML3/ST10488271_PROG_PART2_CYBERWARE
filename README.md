@@ -48,3 +48,35 @@ SentimentDetector.cs detects five sentiments: Worried, Curious, Frustrated, Happ
 
 ### Code Optimisation
 Logic is split across dedicated class files. MainWindow.xaml.cs handles only UI events and calls ChatBot.ProcessInput(). OOP principles are applied throughout: encapsulation, separation of concerns, use of dictionaries and enums.
+
+
+## Project Structure
+
+CyberWare_With_ASM/
+|
+|-- CyberWareWithASM.sln
+|-- README.md
+|
+|-- CybersecurityChatbot/
+|   |-- MainWindow.xaml
+|   |-- MainWindow.xaml.cs
+|   |-- ChatBot.cs
+|   |-- KeywordResponder.cs
+|   |-- SentimentDetector.cs
+|   |-- MemoryStore.cs
+|   |-- AudioPlayer.cs
+|   |-- TopicStore.cs
+|   |-- App.xaml
+|   |-- App.xaml.cs
+|   |-- CyberWareWithASM.csproj
+|   `-- Ahlumile.wav
+|
+`-- .github/
+    `-- workflows/
+        `-- build.yml
+
+
+## Screenshots
+Chat Interface:
+
+<img width="1919" height="1018" alt="Screenshot 2026-05-29 092156" src="https://github.com/user-attachments/assets/03de0ade-99c1-4516-8bd2-d40a53984d1f" />
