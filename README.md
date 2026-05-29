@@ -39,3 +39,9 @@ Each keyword has a list of multiple responses. The Random class selects a differ
 
 ### Conversation Flow
 Supports follow-up phrases such as "tell me more", "explain more", and "elaborate". The bot continues on the last topic without resetting. Casual conversation is also supported: "how are you", "what can you do", "who are you".
+
+### Memory and Recall
+MemoryStore.cs stores the user's full name and favourite cybersecurity topic. The bot references the user's name throughout the conversation and uses the opener "As someone interested in [topic]..." when responding to related messages.
+
+### Sentiment Detection
+SentimentDetector.cs detects five sentiments: Worried, Curious, Frustrated, Happy, Neutral. After detecting a non-neutral sentiment, the bot automatically provides a cybersecurity tip without requiring another input from the user. An empathetic opening sentence is prepended to the tip.
