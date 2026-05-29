@@ -45,3 +45,6 @@ MemoryStore.cs stores the user's full name and favourite cybersecurity topic. Th
 
 ### Sentiment Detection
 SentimentDetector.cs detects five sentiments: Worried, Curious, Frustrated, Happy, Neutral. After detecting a non-neutral sentiment, the bot automatically provides a cybersecurity tip without requiring another input from the user. An empathetic opening sentence is prepended to the tip.
+
+### Code Optimisation
+Logic is split across dedicated class files. MainWindow.xaml.cs handles only UI events and calls ChatBot.ProcessInput(). OOP principles are applied throughout: encapsulation, separation of concerns, use of dictionaries and enums.
